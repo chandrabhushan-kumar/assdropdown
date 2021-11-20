@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url(food1back.jpg);
+  }
+  .container{
+      height: 700px;
+      width: 100%;
+      background-color: thistle;
+  }
+  /* .backimg{
+      background-image: url(food1back.jpg);
+      background-repeat: no-repeat;
+  } */
+  nav{
+      padding-top: 20px;
+      background-color: rgb(90, 124, 114);
+      height: 70px;
+      width: 100%;
+      margin-top: -10px;
+  }
+  nav ul{
+      list-style: none;
+      white-space: nowrap;
+      background-color: rgb(131, 167, 156);
+  }
+  nav .main-menu > li{
+      background-color: rgb(131, 167, 156);
+      display: inline-block;
+      margin-left: -5px;
+      background-color: transparent;
+  }
+  a{
+      height: 20px;
+      width: 200px;
+      /* text-align: left; */
+      text-align: center;
+      padding: 15px 15px 15px 15px;
+      background-color: rgb(85, 131, 121);
+      color: rgb(10, 10, 10);
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+  }
+  nav li:hover > a{
+      background: rgb(212, 216, 208);
+      cursor: pointer;
+  }
+  nav .sub-menu1, nav .sub-menu2, nav .sub-menu3{
+      position: absolute;
+      display: inline-block;
+      display: none;
+  }
+  nav .sub-menu1 li{
+      position: relative;
+      border-top: 1px solid #77808b;
+      border-bottom: 1px solid #90969e;
+  }
+  nav .sub-menu2{
+      top: 0;
+      right: 0;
+      transform: translate(100%, 0)
+  }
+  nav .sub-menu3{
+      top: 0;
+      right: 0;
+      transform: translate(100%, 0)
+  }
+  nav .main-menu > li:hover .sub-menu1, nav .sub-menu1 > li:hover > .sub-menu2, nav .sub-menu2 > li:hover > .sub-menu3{
+      display: block;
+  
+  }
+  .sub-menu2{
+      position: absolute;
+      top: 0;
+      right: 0;
+      -ms-transform: translate(100%,0);
+      -webkit-transform: translate(100%,0);
+      transform:translate(100%,0);
+      display: none;
+  }
+  .sub-menu3{
+      position: absolute;
+      top: 0;
+      right: 0;
+      -ms-transform: translate(100%,0);
+      -webkit-transform: translate(100%,0);
+      transform:translate(100%,0);
+      display: none;
+  }
+  li > a:after {
+      content: " ▼";
+  }
+  li > a:only-child:after {
+      content: ''; 
+  }
+  .book{
+      height:40px;
+      width: 100px;
+      background-color: rgb(143, 187, 187);
+      border-radius: 10px;
+      border: 1px solid black;
+      float: right;
+      margin: 5px;
+  }
+  .book:hover{
+      height:60px;
+      width: 130px;
+      background-color: rgb(97, 140, 148);
+      border-radius: 10px;
+      border: 2px solid black;
+      float: right;
+      margin: 5px;
+  }
+  
